@@ -9,7 +9,7 @@ export default function App() {
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full overflow-hidden ring-2 ring-white shadow-sm">
               <img
-                src="/Luiz Murakami.jpg"
+                src="./Luiz Murakami.jpg"
                 alt="Foto"
                 className="object-cover w-full h-full"
               />
@@ -31,7 +31,7 @@ export default function App() {
               Contato
             </a>
             <a
-              href="/Luiz Henrique E. Murakami - Currículo.pdf"
+              href="./Luiz Henrique E. Murakami - Currículo.pdf"
               download
               className="inline-block ml-2 px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-transparent bg-gradient-to-r from-[#bde1f3] to-[#d9f7ff] hover:opacity-95"
             >
@@ -94,7 +94,7 @@ export default function App() {
               Ver Projetos
             </a>
             <a
-              href=".\Luiz Henrique E. Murakami - Currículo.pdf"
+              href="./Luiz Henrique E. Murakami - Currículo.pdf"
               download
               className="px-5 py-3 rounded-full text-sm border border-slate-700 bg-gray-200"
             >
@@ -131,7 +131,7 @@ export default function App() {
         <aside className="flex justify-center md:justify-end">
           <div className="w-72 h-72 md:w-86 md:h-86 rounded-full overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-400 bg-white/70">
             <img
-              src="\Luiz Murakami.jpg"
+              src="./Luiz Murakami.jpg"
               alt="Minha foto"
               className="w-full h-full object-cover opacity-90"
             />
