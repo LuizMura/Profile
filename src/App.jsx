@@ -76,8 +76,8 @@ export default function App() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
-            Olá, sou Luiz Muarkami <br></br>Meu foco é transformar desafios em
-            resultados.
+            Olá, sou Luiz Murakami <br></br>Minha missão é transformar desafios
+            em resultados.
           </h2>
 
           <p className="text-slate-700">
@@ -145,20 +145,22 @@ export default function App() {
           <div className="md:col-span-2 bg-white/60 p-6 rounded-2xl shadow">
             <h3 className="text-xl font-semibold mb-3">Sobre mim</h3>
             <p className="text-slate-700 leading-relaxed">
-              Sou fascinado por criar e desenvolver coisas. O Front-end me
-              permite transformar ideias em experiências visuais e interativas.
-              Gosto de unir criatividade e funcionalidade, sempre atento às
-              tendências e às necessidades dos usuários. Meu último trabalho foi
-              para a cervejaria DogTown Brew, onde desenvolvi todo o projeto —
-              do Front-end à integração com o banco de dados Firebase, incluindo
+              Sou fascinado por criar e desenvolver. O Front-end me permite
+              transformar idéias em experiências visuais e interativas. Gosto de
+              unir criatividade e funcionalidade, sempre atento as tendências e
+              as necessidades dos usuários. Meu último trabalho foi para a
+              cervejaria DogTown Brew, onde desenvolvi todo o projeto — do
+              Front-end à integração com o banco de dados Firebase, incluindo
               autenticação de login para a área administrativa.
             </p>
 
             <h4 className="mt-6 font-medium">O que eu faço</h4>
             <ul className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 list-inside">
-              <li>• Websites responsivos (HTML, CSS, Tailwind)</li>
+              <li>
+                • Websites responsivos (React, JavaScript, HTML, CSS, Tailwind)
+              </li>
               <li>• Aplicações em React + Vite</li>
-              <li>• Interações com JavaScript puro e Firebase</li>
+              <li>• Interações com APIs e Firebase</li>
               <li>• Otimização de performance e SEO básico</li>
             </ul>
           </div>
