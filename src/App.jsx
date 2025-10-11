@@ -71,16 +71,16 @@ export default function App() {
               />
             </svg>
             <span className="text-sm text-grey-700">
-              Portfólio — front-end e UI
+              Portfólio — Front-end e UI
             </span>
           </div>
 
           <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
-            Olá, sou Luiz Murakami <br></br>Minha missão é transformar desafios
-            em resultados.
+            Olá, sou Luiz Murakami <br></br>Meu foco é transformar desafios em
+            resultados.
           </h2>
 
-          <p className="text-slate-700">
+          <p className="text-slate-900 -mt-3">
             Desenvolvedor Front-end com experiência em React, Vite, Tailwind,
             JavaScript e Firebase. Gosto de transformar ideias em sites
             responsivos, focados em performance e design.
@@ -94,7 +94,7 @@ export default function App() {
               Ver Projetos
             </a>
             <a
-              href="./Luiz Henrique E. Murakami - Currículo.pdf"
+              href="\Luiz Henrique Eijh Murakami - Curriculo.pdf"
               download
               className="px-5 py-3 rounded-full text-sm border border-slate-700 bg-gray-200"
             >
@@ -146,11 +146,11 @@ export default function App() {
             <h3 className="text-xl font-semibold mb-3">Sobre mim</h3>
             <p className="text-slate-700 leading-relaxed">
               Sou fascinado por criar e desenvolver. O Front-end me permite
-              transformar idéias em experiências visuais e interativas. Gosto de
-              unir criatividade e funcionalidade, sempre atento as tendências e
-              as necessidades dos usuários. Meu último trabalho foi para a
+              transformar ideias em experiências visuais e interativas. Gosto de
+              unir criatividade e funcionalidade, sempre atento às tendências e
+              às necessidades dos usuários. Meu último trabalho foi para a
               cervejaria DogTown Brew, onde desenvolvi todo o projeto — do
-              Front-end à integração com o banco de dados Firebase, incluindo
+              Front-end à integração com banco de dados Firebase, incluindo
               autenticação de login para a área administrativa.
             </p>
 
