@@ -31,7 +31,7 @@ export default function App() {
               Contato
             </a>
             <a
-              href="./Luiz Henrique E. Murakami - Currículo.pdf"
+              href="/curriculo-luiz-murakami.pdf"
               download
               className="inline-block ml-2 px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-transparent bg-gradient-to-r from-[#bde1f3] to-[#d9f7ff] hover:opacity-95"
             >
@@ -94,7 +94,7 @@ export default function App() {
               Ver Projetos
             </a>
             <a
-              href="\Luiz Henrique Eijh Murakami - Curriculo.pdf"
+              href="/curriculo-luiz-murakami.pdf"
               download
               className="px-5 py-3 rounded-full text-sm border border-slate-700 bg-gray-200"
             >
