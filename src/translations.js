@@ -63,12 +63,12 @@ export const translations = {
     heroTitle:
       "Hi, I'm Luiz Murakami\nMy focus is turning challenges into results.",
     heroDesc:
-      "Front-end developer with experience in React, Vite, Tailwind, JavaScript, and Firebase. I enjoy turning ideas into responsive websites, focused on performance and design.",
+      "Frontend developer skilled in React, Vite, Tailwind, JavaScript, and Firebase. I build interactive, performant websites and UI-focused web applications.",
     verProjetos: "See Projects",
     // About
     sobreMim: "About Me",
     sobreMimDesc:
-      "I am passionate about creating and developing. Front-end allows me to turn ideas into visual and interactive experiences. I enjoy combining creativity with functionality, always paying attention to trends and user needs. My last work was for DogTown Brew brewery, where I developed the entire project — from Front-end to Firebase database integration, including login authentication for the admin area.",
+      "I am passionate about building and developing interfaces. Frontend development allows me to transform ideas into interactive and visually engaging experiences. I combine creativity and functionality, staying up-to-date with trends and user needs. My recent project was for DogTown Brew brewery, where I developed the entire system — from frontend to Firebase integration, including admin authentication.",
     oQueFaço: "What I do",
     habilidades: "Skills",
     disponivel: "Availability",
@@ -87,7 +87,7 @@ export const translations = {
     projetosRecentes: "Recent Projects",
     dogtownTitle: "DogTown Brew",
     dogtownDesc:
-      "Official brewery website with product cards, shopping cart, and admin area",
+      "Official brewery website with product listings, shopping cart, and admin dashboard",
     tarefasTitle: "Task App",
     tarefasDesc:
       "React.js + Vite app connected to JSONPlaceholder API for ready-made data",
@@ -99,8 +99,8 @@ export const translations = {
     // Contact
     email: "Email",
     whatsapp: "WhatsApp",
-    contatoDesc: "Whatsapp or email is the best way to contact me.",
-    ouMeEncontre: "Or find me at",
+    contatoDesc: "The best way to reach me is via WhatsApp or email.",
+    ouMeEncontre: "Find me on",
     // Footer
     copyright: "©",
   },
