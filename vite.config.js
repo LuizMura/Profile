@@ -6,4 +6,5 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: "/Profile/",
+  publicDir: "public", // 👈 garante que arquivos estáticos (PDF, imagens etc.) sejam copiados
 });
