@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { translations } from "./translations";
 
 export default function App() {
+  const [lang, setLang] = useState("pt");
+  const t = translations[lang];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#577089] via-[#868787] to-[#f7fff6] font-sans text-slate-900">
       {/* NAVBAR */}
@@ -22,23 +26,48 @@ export default function App() {
 
           <div className="hidden md:flex items-center gap-4">
             <a href="#about" className="text-sm hover:underline">
-              Sobre
+              {t.sobre}
             </a>
             <a href="#projects" className="text-sm hover:underline">
-              Projetos
+              {t.projetos}
             </a>
             <a href="#contact" className="text-sm hover:underline">
-              Contato
+              {t.contato}
             </a>
             <a
-              href={`${import.meta.env.BASE_URL}curriculo-luiz-murakami.pdf`}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={
+                lang === "pt"
+                  ? `${
+                      import.meta.env.BASE_URL
+                    }Curriculo- Luiz Henrique E. Murakami.pdf`
+                  : `${
+                      import.meta.env.BASE_URL
+                    }Resume CV - Luiz Henrique E. Murakami.pdf`
+              }
               download
               className="inline-block ml-2 px-4 py-2 rounded-full text-sm font-medium shadow-sm border border-transparent bg-gradient-to-r from-[#bde1f3] to-[#d9f7ff] hover:opacity-95"
             >
-              Currículo
+              {t.baixarCurriculo}
             </a>
+            {/* Switcher */}
+            <div className="ml-4 flex gap-2">
+              <button
+                onClick={() => setLang("pt")}
+                className={`px-2 py-1 rounded ${
+                  lang === "pt" ? "bg-slate-300" : "bg-white/60"
+                }`}
+              >
+                PT
+              </button>
+              <button
+                onClick={() => setLang("en")}
+                className={`px-2 py-1 rounded ${
+                  lang === "en" ? "bg-slate-300" : "bg-white/60"
+                }`}
+              >
+                EN
+              </button>
+            </div>
           </div>
 
           <div className="md:hidden">
@@ -46,7 +75,7 @@ export default function App() {
               href="#contact"
               className="text-sm px-3 py-2 rounded-md bg-white/60 shadow"
             >
-              Contato
+              {t.contato}
             </a>
           </div>
         </nav>
@@ -56,78 +85,36 @@ export default function App() {
       <main className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <section className="space-y-6">
           <div className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-green-50/80 border border-white-700">
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="#888"
-              xmlns="http://www.w3.org/2000/svg"
-              className="opacity-80 "
-            >
-              <path
-                d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z"
-                stroke="#000"
-                strokeWidth="1.2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <span className="text-sm text-grey-700">
-              Portfólio — Front-end e UI
-            </span>
+            <span className="text-sm text-grey-700">{t.portifolio}</span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">
-            Olá, sou Luiz Murakami <br></br>Meu foco é transformar desafios em
-            resultados.
+          <h2 className="text-3xl md:text-4xl font-extrabold leading-tight whitespace-pre-line">
+            {t.heroTitle}
           </h2>
 
-          <p className="text-slate-900 -mt-3">
-            Desenvolvedor Front-end com experiência em React, Vite, Tailwind,
-            JavaScript e Firebase. Gosto de transformar ideias em sites
-            responsivos, focados em performance e design.
-          </p>
+          <p className="text-slate-900 -mt-3">{t.heroDesc}</p>
 
           <div className="flex flex-wrap gap-3">
             <a
               href="#projects"
               className="px-5 py-3 rounded-full text-sm font-semibold shadow-md bg-gradient-to-r from-[#8eff8d] to-[#b6ffc2]"
             >
-              Ver Projetos
+              {t.verProjetos}
             </a>
             <a
-              href={`${import.meta.env.BASE_URL}curriculo-luiz-murakami.pdf`}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={
+                lang === "pt"
+                  ? `${
+                      import.meta.env.BASE_URL
+                    }Curriculo- Luiz Henrique E. Murakami.pdf`
+                  : `${
+                      import.meta.env.BASE_URL
+                    }Resume CV - Luiz Henrique E. Murakami.pdf`
+              }
               download
               className="px-5 py-3 rounded-full text-sm border border-slate-700 bg-gray-200"
             >
-              Baixar Currículo
-            </a>
-          </div>
-
-          <div className="mt-4 flex items-center gap-4">
-            <a
-              href="mailto:luiz-murakami@hotmail.com"
-              className="text-sm hover:underline"
-            >
-              luiz-murakami@hotmail.com
-            </a>
-            <a
-              href="https://www.linkedin.com/in/luizmura"
-              target="_blank"
-              rel="noreferrer"
-              className="text-sm hover:underline"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/LuizMura"
-              target="_blank"
-              rel="noreferrer"
-              className="text-sm hover:underline"
-            >
-              GitHub
+              {t.baixarCurriculo}
             </a>
           </div>
         </section>
@@ -147,18 +134,10 @@ export default function App() {
       <section id="about" className="max-w-6xl mx-auto px-6 py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="md:col-span-2 bg-white/60 p-6 rounded-2xl shadow">
-            <h3 className="text-xl font-semibold mb-3">Sobre mim</h3>
-            <p className="text-slate-700 leading-relaxed">
-              Sou fascinado por criar e desenvolver. O Front-end me permite
-              transformar ideias em experiências visuais e interativas. Gosto de
-              unir criatividade e funcionalidade, sempre atento às tendências e
-              às necessidades dos usuários. Meu último trabalho foi para a
-              cervejaria DogTown Brew, onde desenvolvi todo o projeto — do
-              Front-end à integração com banco de dados Firebase, incluindo
-              autenticação de login para a área administrativa.
-            </p>
+            <h3 className="text-xl font-semibold mb-3">{t.sobreMim}</h3>
+            <p className="text-slate-700 leading-relaxed">{t.sobreMimDesc}</p>
 
-            <h4 className="mt-6 font-medium">O que eu faço</h4>
+            <h4 className="mt-6 font-medium">{t.oQueFaço}</h4>
             <ul className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 list-inside">
               <li>
                 • Websites responsivos (React, JavaScript, HTML, CSS, Tailwind)
@@ -170,17 +149,9 @@ export default function App() {
           </div>
 
           <aside className="bg-white/60 p-6 rounded-2xl shadow">
-            <h4 className="text-lg font-semibold mb-3">Habilidades</h4>
+            <h4 className="text-lg font-semibold mb-3">{t.habilidades}</h4>
             <div className="flex flex-wrap gap-2">
-              {[
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React",
-                "Tailwind",
-                "Firebase",
-                "Git",
-              ].map((s) => (
+              {t.skillList.map((s) => (
                 <span
                   key={s}
                   className="px-3 py-1 text-sm rounded-full border text-slate-700 bg-gradient-to-r from-[#fff1f8] to-[#e8fbff]"
@@ -192,11 +163,13 @@ export default function App() {
 
             <div className="mt-6">
               <h5 className="text-sm font-medium text-slate-600">
-                Disponibilidade
+                {t.disponivel}
               </h5>
               <p className="text-sm">Contrato remoto ou híbrido / Freelance</p>
 
-              <h5 className="mt-4 text-sm font-medium text-slate-600">Local</h5>
+              <h5 className="mt-4 text-sm font-medium text-slate-600">
+                {t.local}
+              </h5>
               <p className="text-sm">Brasil e exterior (flexível)</p>
             </div>
           </aside>
@@ -205,22 +178,22 @@ export default function App() {
 
       {/* PROJECTS */}
       <section id="projects" className="max-w-6xl mx-auto px-6 py-10">
-        <h3 className="text-2xl font-semibold mb-6">Projetos Recentes</h3>
+        <h3 className="text-2xl font-semibold mb-6">{t.projetosRecentes}</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
-              title: "DogTown Brew ",
-              desc: "Site oficial da cervejaria com cards de produtos, carrinho de compras e área de administrtativa",
+              title: t.dogtownTitle,
+              desc: t.dogtownDesc,
               link: "https://www.dogtownbrew.com.br/",
             },
             {
-              title: "Tarefas App",
-              desc: "Aplicativo React.js + Vite conectado com API JSONPlaceholder para uso de dados prontos",
+              title: t.tarefasTitle,
+              desc: t.tarefasDesc,
               link: "https://luizmura.github.io/Task-App/",
             },
             {
-              title: "Weather App",
-              desc: "Aplicativo React.js + vite consumindo API da OpenWeather para mostrar clima por cidade",
+              title: t.weatherTitle,
+              desc: t.weatherDesc,
               link: "https://luizmura.github.io/Weather-App/",
             },
           ].map((p) => (
@@ -237,10 +210,10 @@ export default function App() {
                   rel="noreferrer"
                   className="text-sm px-3 py-2 rounded-2xl border bg-white/40"
                 >
-                  Ver
+                  {t.ver}
                 </a>
                 <a href="#contact" className="text-sm text-slate-600">
-                  Detalhes
+                  {t.detalhes}
                 </a>
               </div>
             </article>
@@ -251,33 +224,16 @@ export default function App() {
       {/* CONTACT */}
       <section id="contact" className="max-w-6xl mx-auto px-6 py-10">
         <div className="bg-gradient-to-r from-[#589db1] via-[#7ac6cb] to-[#4dbdd4] p-6 rounded-2xl shadow">
-          <h3 className="text-2xl font-semibold mb-3">Contato</h3>
-          <p className="text-slate-700">
-            Whatsapp ou email é a melhor forma de me contatar.
-          </p>
+          <h3 className="text-2xl font-semibold mb-3">{t.contato}</h3>
+          <p className="text-slate-700">{t.contatoDesc}</p>
 
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <a
               href="mailto:luiz-murakami@hotmail.com"
               className="flex items-center gap-3 p-4 rounded-xl bg-white/70 shadow"
             >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3 8.5L12 13L21 8.5"
-                  stroke="#ff6ea6"
-                  strokeWidth="1.4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
               <div>
-                <p className="text-sm font-medium">Email</p>
+                <p className="text-sm font-medium">{t.email}</p>
                 <p className="text-xs text-slate-600">
                   luiz-murakami@hotmail.com
                 </p>
@@ -290,30 +246,15 @@ export default function App() {
               rel="noreferrer"
               className="flex items-center gap-3 p-4 rounded-xl bg-white/70 shadow"
             >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21 12a9 9 0 10-2.6 6.06L22 22l-3.94-1.54A9 9 0 0021 12z"
-                  stroke="#22c55e"
-                  strokeWidth="1.2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
               <div>
-                <p className="text-sm font-medium">WhatsApp</p>
+                <p className="text-sm font-medium">{t.whatsapp}</p>
                 <p className="text-xs text-slate-600">+55 16 98107-2615</p>
               </div>
             </a>
           </div>
 
           <div className="mt-6 text-sm text-slate-600">
-            Ou me encontre:
+            {t.ouMeEncontre}:
             <a
               href="https://www.linkedin.com/in/luizmura"
               target="_blank"
@@ -340,7 +281,7 @@ export default function App() {
       {/* FOOTER */}
       <footer className="mt-12 py-6 border-t border-white/40">
         <div className="max-w-6xl mx-auto px-6 text-center text-sm text-slate-600">
-          © {new Date().getFullYear()} Luiz Murakami
+          {t.copyright} {new Date().getFullYear()} Luiz Murakami
         </div>
       </footer>
     </div>
