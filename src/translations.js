@@ -20,6 +20,8 @@ export const translations = {
     habilidades: "Habilidades",
     disponivel: "Disponibilidade",
     local: "Local",
+    contrato: "Contrato remoto ou híbrido / Freelance",
+    brasil: "Brasil e exterior (flexível)",
     // Skills
     skillList: [
       "HTML",
@@ -30,6 +32,12 @@ export const translations = {
       "Firebase",
       "Git",
     ],
+    webResponsivo:
+      "Websites responsivos (React, JavaScript, HTML, CSS, Tailwind)",
+    apliReact: "Aplicações em React + Vite",
+    interaApiFirebase: "Interações com APIs e Firebase",
+    otimiPerfo: "Otimização de performance e SEO básico",
+
     // Projects
     projetosRecentes: "Projetos Recentes",
     dogtownTitle: "DogTown Brew",
@@ -73,6 +81,8 @@ export const translations = {
     habilidades: "Skills",
     disponivel: "Availability",
     local: "Location",
+    contrato: "Remote or hybrid contract / Freelance",
+    brasil: "Brazil and abroad (flexible)",
     // Skills
     skillList: [
       "HTML",
@@ -83,6 +93,11 @@ export const translations = {
       "Firebase",
       "Git",
     ],
+    webResponsivo:
+      "Responsive websites (React, JavaScript, HTML, CSS, Tailwind)",
+    apliReact: " React + Vite applications",
+    interaApiFirebase: "API integrations and Firebase interactions",
+    otimiPerfo: "Performance optimization and basic SEO",
     // Projects
     projetosRecentes: "Recent Projects",
     dogtownTitle: "DogTown Brew",
