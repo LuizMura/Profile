@@ -5,6 +5,8 @@ export const translations = {
     projetos: "Projetos",
     contato: "Contato",
     baixarCurriculo: "Baixar Currículo",
+    copiarLink: "Copiar link",
+    linkCopiado: "Link copiado!",
     // Hero
     portifolio: "Portfólio — Front-end e UI",
     heroTitle:
@@ -66,6 +68,8 @@ export const translations = {
     projetos: "Projects",
     contato: "Contact",
     baixarCurriculo: "Download Resume",
+    copiarLink: "Copy link",
+    linkCopiado: "Copied Link!",
     // Hero
     portifolio: "Portfolio — Front-end & UI",
     heroTitle:
