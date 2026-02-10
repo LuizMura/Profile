@@ -5,59 +5,44 @@ export const translations = {
     projetos: "Projetos",
     contato: "Contato",
     baixarCurriculo: "Baixar Currículo",
-    copiarLink: "Copiar link",
+    copiarLink: "Compartilhar",
     linkCopiado: "Link copiado!",
+    cargo: "Desenvolvedor Front-end",
     // Hero
-    portifolio: "Portfólio — Front-end e UI",
-    heroTitle:
-      "Olá, sou Luiz Murakami\nMeu foco é transformar desafios em resultados.",
+    heroTitle: "TRANSFORMANDO IDÉIAS EM RESULTADO.",
     heroDesc:
-      "Desenvolvedor Front-end com experiência em React, Vite, Tailwind, JavaScript e Firebase. Gosto de transformar ideias em sites responsivos, focados em performance e design.",
-    verProjetos: "Ver Projetos",
+      "Coloque sua empresa e seus serviços ao alcance das pessoas certas.\n Desenvolvo websites responsivos que funcionam perfeitamente em qualquer dispositivo, com recursos como vendas online e agendamento de serviços. Tudo com um design moderno, leve e otimizado para performance e SEO.",
+    entreEmContato: "Entre em contato",
     // About
     sobreMim: "Sobre mim",
     sobreMimDesc:
-      "Sou fascinado por criar e desenvolver. O Front-end me permite transformar ideias em experiências visuais e interativas. Gosto de unir criatividade e funcionalidade, sempre atento às tendências e necessidades dos usuários. Meu último trabalho foi para a cervejaria DogTown Brew, onde desenvolvi todo o projeto — do Front-end à integração com banco de dados Firebase, incluindo autenticação de login para a área administrativa.",
+      "Sou desenvolvedor front-end e crio websites e interfaces digitais para marcas, produtos e negócios.\nEntrego soluções modernas, rápidas e bem estruturadas, focadas em comunicação clara, performance e conversão.\n\nTrabalho principalmente com Next.js, React, TypeScript e Tailwind CSS, aplicando boas práticas de UI, performance, acessibilidade e SEO para construir produtos escaláveis e eficientes.",
     oQueFaço: "O que eu faço",
-    habilidades: "Habilidades",
     disponivel: "Disponibilidade",
     local: "Local",
     contrato: "Contrato remoto ou híbrido / Freelance",
     brasil: "Brasil e exterior (flexível)",
     // Skills
-    skillList: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React",
-      "Tailwind",
-      "Firebase",
-      "Git",
-    ],
     webResponsivo:
-      "Websites responsivos (React, JavaScript, HTML, CSS, Tailwind)",
-    apliReact: "Aplicações em React + Vite",
-    interaApiFirebase: "Interações com APIs e Firebase",
-    otimiPerfo: "Otimização de performance e SEO básico",
+      "Landing pages, sites institucionais e portfólios focados em conversão",
+    apliReact: "Aplicações front-end modernas com Next.js e React",
+    interaApiFirebase: "Integração com APIs, bancos de dados e formulários",
+    otimiPerfo: "Otimização de performance, SEO técnico e acessibilidade",
 
     // Projects
     projetosRecentes: "Projetos Recentes",
     dogtownTitle: "DogTown Brew",
     dogtownDesc:
-      "Site oficial da cervejaria com cards de produtos, carrinho de compras e área administrativa",
-    tarefasTitle: "Tarefas App",
-    tarefasDesc:
-      "Aplicativo React.js + Vite conectado com API JSONPlaceholder para uso de dados prontos",
-    weatherTitle: "Weather App",
-    weatherDesc:
-      "Aplicativo React.js + Vite consumindo API da OpenWeather para mostrar clima por cidade",
+      "Site oficial da cervejaria com cards de produtos, carrinho de compras e área administrativa — desenvolvido em HTML, CSS e Firebase",
+    fujiviewTitle: "FujiviewTech",
+    fujiviewDesc:
+      "Projeto pessoal em andamento com foco institucional em tecnologia e soluções digitais — desenvolvido em Next.js, TypeScript, Tailwind CSS e Supabase",
     ver: "Ver",
     detalhes: "Detalhes",
     // Contact
     email: "Email",
     whatsapp: "WhatsApp",
     contatoDesc: "Whatsapp ou email é a melhor forma de me contatar.",
-    ouMeEncontre: "Ou me encontre",
     // Footer
     copyright: "©",
   },
@@ -68,58 +53,42 @@ export const translations = {
     projetos: "Projects",
     contato: "Contact",
     baixarCurriculo: "Download Resume",
-    copiarLink: "Copy link",
+    copiarLink: "Share",
     linkCopiado: "Copied Link!",
+    cargo: "Front-end Developer",
     // Hero
-    portifolio: "Portfolio — Front-end & UI",
-    heroTitle:
-      "Hi, I'm Luiz Murakami\nMy focus is turning challenges into results.",
+    heroTitle: "Turning ideas into results.",
     heroDesc:
-      "Frontend developer skilled in React, Vite, Tailwind, JavaScript, and Firebase. I build interactive, performant websites and UI-focused web applications.",
-    verProjetos: "See Projects",
+      "Get your business in front of the right audience.\n Fast, responsive websites designed to grow with you — optimized for performance and SEO.",
+    entreEmContato: "Get in Touch",
     // About
     sobreMim: "About Me",
     sobreMimDesc:
-      "I am passionate about building and developing interfaces. Frontend development allows me to transform ideas into interactive and visually engaging experiences. I combine creativity and functionality, staying up-to-date with trends and user needs. My recent project was for DogTown Brew brewery, where I developed the entire system — from frontend to Firebase integration, including admin authentication.",
+      "I’m a front-end developer who builds websites and interfaces for brands and products. For clients, I deliver fast, clear, conversion‑focused sites. For recruiters, I highlight experience with React, Vite, Next.js, HTML, CSS, and JavaScript, applying UI best practices, performance, and SEO.",
     oQueFaço: "What I do",
-    habilidades: "Skills",
     disponivel: "Availability",
     local: "Location",
     contrato: "Remote or hybrid contract / Freelance",
     brasil: "Brazil and abroad (flexible)",
     // Skills
-    skillList: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React",
-      "Tailwind",
-      "Firebase",
-      "Git",
-    ],
-    webResponsivo:
-      "Responsive websites (React, JavaScript, HTML, CSS, Tailwind)",
-    apliReact: " React + Vite applications",
-    interaApiFirebase: "API integrations and Firebase interactions",
-    otimiPerfo: "Performance optimization and basic SEO",
+    webResponsivo: "Landing pages, institutional sites, and portfolios",
+    apliReact: "Interfaces in React.js, Vite, and Next.js",
+    interaApiFirebase: "API integrations, forms, and WhatsApp",
+    otimiPerfo: "Performance, technical SEO, and accessibility",
     // Projects
     projetosRecentes: "Recent Projects",
     dogtownTitle: "DogTown Brew",
     dogtownDesc:
-      "Official brewery website with product listings, shopping cart, and admin dashboard",
-    tarefasTitle: "Task App",
-    tarefasDesc:
-      "React.js + Vite app connected to JSONPlaceholder API for ready-made data",
-    weatherTitle: "Weather App",
-    weatherDesc:
-      "React.js + Vite app consuming OpenWeather API to display city weather",
+      "Official brewery website with product listings, shopping cart, and admin dashboard — built with HTML, CSS, and Firebase",
+    fujiviewTitle: "FujiviewTech",
+    fujiviewDesc:
+      "Personal project in progress focused on institutional presence for technology and digital solutions — built with Next.js, TypeScript, Tailwind CSS, and Supabase",
     ver: "See",
     detalhes: "Details",
     // Contact
     email: "Email",
     whatsapp: "WhatsApp",
     contatoDesc: "The best way to reach me is via WhatsApp or email.",
-    ouMeEncontre: "Find me on",
     // Footer
     copyright: "©",
   },

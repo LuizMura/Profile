@@ -5,19 +5,13 @@ import CopyLink from "./CopyLinkButton";
 export default function Navbar({ lang, setLang, menuOpen, setMenuOpen, t }) {
   return (
     <header className="sticky top-0 z-40 backdrop-blur-md bg-white/60 border-b border-white/30">
-      <nav className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between relative">
-        {/* Logo */}
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full overflow-hidden ring-2 ring-white shadow-sm">
-            <img
-              src="./Luiz Murakami.jpg"
-              alt="Photo"
-              className="object-cover w-full h-full"
-            />
-          </div>
+      <nav className="max-w-6xl mx-auto px-6 py-1 flex items-center justify-between relative">
+        <div className="flex items-center">
           <div>
-            <h1 className="text-lg font-semibold">Luiz Murakami</h1>
-            <p className="text-xs text-slate-600">Front-end Developer</p>
+            <h1 className="text-2xl font-bold">Luiz Murakami</h1>
+            <p className="text-xl text-slate-600 font-semibold -mt-1">
+              {t.cargo}
+            </p>
           </div>
         </div>
 

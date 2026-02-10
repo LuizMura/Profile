@@ -5,8 +5,17 @@ export default function CopyLink({ t }) {
   const url = window.location.href;
   const [copied, setCopied] = useState(false);
 
-  const copyLink = () => {
-    navigator.clipboard.writeText(url);
+  const copyLink = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({ url });
+        return;
+      } catch {
+        // Se o usuário cancelar, não faz nada
+      }
+    }
+
+    await navigator.clipboard.writeText(url);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000); // some após 2 segundos
   };
