@@ -6,11 +6,11 @@ export default function Navbar({ lang, setLang, menuOpen, setMenuOpen, t }) {
   return (
     <header className="sticky top-0 z-40 backdrop-blur-md bg-white/60 border-b border-white/30">
       <nav className="max-w-6xl mx-auto px-6 py-1 flex items-center justify-between relative">
-        <div className="flex items-center">
+              <div className="flex items-center">
           <div>
             <h1 className="text-2xl font-bold">Luiz Murakami</h1>
             <p className="text-xl text-slate-600 font-semibold -mt-1">
-              {t.cargo}
+              Front-end Developer
             </p>
           </div>
         </div>
