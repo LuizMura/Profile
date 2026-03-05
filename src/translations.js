@@ -37,8 +37,8 @@ export const translations = {
     fujiviewTitle: "FujiviewTech",
     fujiviewDesc:
       "Projeto pessoal em andamento com foco institucional em tecnologia e soluções digitais — desenvolvido em Next.js, TypeScript, Tailwind CSS e Supabase",
-    ver: "Ver",
-    detalhes: "Detalhes",
+    ver: "Ir para o site",
+    detalhes: "Ver Repositório",
     // Contact
     email: "Email",
     whatsapp: "WhatsApp",
@@ -83,8 +83,8 @@ export const translations = {
     fujiviewTitle: "FujiviewTech",
     fujiviewDesc:
       "Personal project in progress focused on institutional presence for technology and digital solutions — built with Next.js, TypeScript, Tailwind CSS, and Supabase",
-    ver: "See",
-    detalhes: "Details",
+    ver: "Go to website",
+    detalhes: "View Repository",
     // Contact
     email: "Email",
     whatsapp: "WhatsApp",
